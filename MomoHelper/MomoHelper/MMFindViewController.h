@@ -8,18 +8,21 @@
 
 #import "NKViewController.h"
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MMFindViewController : NKViewController{
+@interface MMFindViewController : NKViewController <MKMapViewDelegate, CLLocationManagerDelegate>{
     
     MKMapView *map;
     
     
     UITextField *distanceField;
+    BOOL regioned;
     
 }
 
 @property (nonatomic, assign) MKMapView *map;
-
 @property (nonatomic, assign) UITextField *distanceField;
+
+- (IBAction)addRegionWithDistance:(double)distance;
 
 @end

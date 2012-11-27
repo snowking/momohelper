@@ -25,7 +25,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     // Config
-    [[NKConfig sharedConfig] setNavigatorHeight:35];
+    [[NKConfig sharedConfig] setNavigatorHeight:49];
     [[NKConfig sharedConfig] setNavigatorChangeAnimate:YES];
     [[NKConfig sharedConfig] setNavigatorShowAnimate:YES];
     [[NKConfig sharedConfig] setDomainURL:@"http://lab.isou.hk/isou/api"];
@@ -37,8 +37,8 @@
     ui.welcomeCalss = [MMFindViewController class];
     
     [ui addTabs:[NSArray arrayWithObjects:[NSArray arrayWithObjects:
-                                           [NKSegment segmentWithNormalBack:[UIImage imageNamed:@"tab_find_n.png"] selectedBack:[UIImage imageNamed:@"tab_find_c.png"] andTitle:@"寻Ta"],
-                                           [NKSegment segmentWithNormalBack:[UIImage imageNamed:@"tab_wolf_n.png"] selectedBack:[UIImage imageNamed:@"tab_wolf_c.png"] andTitle:@"狼群"],
+                                           [NKSegment segmentWithSize:CGSizeMake(240, 49) color:[UIColor lightGrayColor] andTitle:@"寻Ta"],
+                                           [NKSegment segmentWithSize:CGSizeMake(80, 49) color:[UIColor grayColor] andTitle:@"狼群"],
                                            nil],
                  [NSArray arrayWithObjects:[MMFindViewController class], [MMWolfViewController class], nil],
                  nil]];

@@ -30,6 +30,12 @@
 		3CBCB2EC1653E5FE0086E863 /* tab_find_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CBCB2E81653E5FE0086E863 /* tab_find_n@2x.png */; };
 		3CBCB2ED1653E5FE0086E863 /* tab_wolf_c@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CBCB2E91653E5FE0086E863 /* tab_wolf_c@2x.png */; };
 		3CBCB2EE1653E5FE0086E863 /* tab_wolf_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CBCB2EA1653E5FE0086E863 /* tab_wolf_n@2x.png */; };
+		A3E86525166467BE007AD827 /* NKNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E86524166467BE007AD827 /* NKNumberPad.m */; };
+		A3E865351664B216007AD827 /* RegionAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E865301664B216007AD827 /* RegionAnnotation.m */; };
+		A3E865361664B216007AD827 /* RegionAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E865321664B216007AD827 /* RegionAnnotationView.m */; };
+		A3E865371664B216007AD827 /* RemoveRegion.png in Resources */ = {isa = PBXBuildFile; fileRef = A3E865331664B216007AD827 /* RemoveRegion.png */; };
+		A3E865381664B216007AD827 /* RemoveRegion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3E865341664B216007AD827 /* RemoveRegion@2x.png */; };
+		A3E8653A1664B4DB007AD827 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E865391664B4DB007AD827 /* CoreLocation.framework */; };
 		A3F0C4AD16634F5700CBFE54 /* NKAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F0C3F116634F5700CBFE54 /* NKAccountManager.m */; };
 		A3F0C4AE16634F5700CBFE54 /* NKDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F0C3F316634F5700CBFE54 /* NKDataStore.m */; };
 		A3F0C4AF16634F5700CBFE54 /* NKMAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F0C3F616634F5700CBFE54 /* NKMAccount.m */; };
@@ -175,6 +181,15 @@
 		3CBCB2E81653E5FE0086E863 /* tab_find_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_find_n@2x.png"; sourceTree = "<group>"; };
 		3CBCB2E91653E5FE0086E863 /* tab_wolf_c@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_wolf_c@2x.png"; sourceTree = "<group>"; };
 		3CBCB2EA1653E5FE0086E863 /* tab_wolf_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_wolf_n@2x.png"; sourceTree = "<group>"; };
+		A3E86523166467BE007AD827 /* NKNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNumberPad.h; sourceTree = "<group>"; };
+		A3E86524166467BE007AD827 /* NKNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNumberPad.m; sourceTree = "<group>"; };
+		A3E8652F1664B216007AD827 /* RegionAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionAnnotation.h; sourceTree = "<group>"; };
+		A3E865301664B216007AD827 /* RegionAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionAnnotation.m; sourceTree = "<group>"; };
+		A3E865311664B216007AD827 /* RegionAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionAnnotationView.h; sourceTree = "<group>"; };
+		A3E865321664B216007AD827 /* RegionAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionAnnotationView.m; sourceTree = "<group>"; };
+		A3E865331664B216007AD827 /* RemoveRegion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RemoveRegion.png; sourceTree = "<group>"; };
+		A3E865341664B216007AD827 /* RemoveRegion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RemoveRegion@2x.png"; sourceTree = "<group>"; };
+		A3E865391664B4DB007AD827 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A3F0C3F016634F5700CBFE54 /* NKAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAccountManager.h; sourceTree = "<group>"; };
 		A3F0C3F116634F5700CBFE54 /* NKAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAccountManager.m; sourceTree = "<group>"; };
 		A3F0C3F216634F5700CBFE54 /* NKDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDataStore.h; sourceTree = "<group>"; };
@@ -354,6 +369,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E8653A1664B4DB007AD827 /* CoreLocation.framework in Frameworks */,
 				3CBCB2D61653D6270086E863 /* MapKit.framework in Frameworks */,
 				3CBCB2B61653CC6C0086E863 /* QuartzCore.framework in Frameworks */,
 				3CBCB2B41653CC670086E863 /* libz.dylib in Frameworks */,
@@ -372,6 +388,7 @@
 		3CBCB1A31653CBF00086E863 = {
 			isa = PBXGroup;
 			children = (
+				A3E865391664B4DB007AD827 /* CoreLocation.framework */,
 				3CBCB2D51653D6270086E863 /* MapKit.framework */,
 				3CBCB2B51653CC6C0086E863 /* QuartzCore.framework */,
 				3CBCB2B31653CC670086E863 /* libz.dylib */,
@@ -452,6 +469,7 @@
 		3CBCB2C91653D2D00086E863 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				A3E8652E1664B202007AD827 /* Region */,
 				3CBCB2CA1653D4F50086E863 /* MMFindViewController.h */,
 				3CBCB2CB1653D4F50086E863 /* MMFindViewController.m */,
 				3CBCB2CC1653D4F50086E863 /* MMFindViewController.xib */,
@@ -467,6 +485,19 @@
 				3CBCB2D21653D5560086E863 /* MMWolfViewController.xib */,
 			);
 			name = Wolf;
+			sourceTree = "<group>";
+		};
+		A3E8652E1664B202007AD827 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8652F1664B216007AD827 /* RegionAnnotation.h */,
+				A3E865301664B216007AD827 /* RegionAnnotation.m */,
+				A3E865311664B216007AD827 /* RegionAnnotationView.h */,
+				A3E865321664B216007AD827 /* RegionAnnotationView.m */,
+				A3E865331664B216007AD827 /* RemoveRegion.png */,
+				A3E865341664B216007AD827 /* RemoveRegion@2x.png */,
+			);
+			name = Region;
 			sourceTree = "<group>";
 		};
 		A3F0C3EE16634F5700CBFE54 /* NEXTKING */ = {
@@ -672,6 +703,8 @@
 				A3F0C4A116634F5700CBFE54 /* NKTextField.m */,
 				A3F0C4A216634F5700CBFE54 /* NKTextViewWithPlaceholder.h */,
 				A3F0C4A316634F5700CBFE54 /* NKTextViewWithPlaceholder.m */,
+				A3E86523166467BE007AD827 /* NKNumberPad.h */,
+				A3E86524166467BE007AD827 /* NKNumberPad.m */,
 			);
 			path = NKKit;
 			sourceTree = "<group>";
@@ -915,6 +948,8 @@
 				A3F0C51116634F5700CBFE54 /* pumultiselect_un_click@2x.png in Resources */,
 				A3F0C51216634F5700CBFE54 /* puright_click@2x.png in Resources */,
 				A3F0C51316634F5700CBFE54 /* puright_normal@2x.png in Resources */,
+				A3E865371664B216007AD827 /* RemoveRegion.png in Resources */,
+				A3E865381664B216007AD827 /* RemoveRegion@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1017,9 @@
 				A3F0C51B16634F5700CBFE54 /* UIImage+Alpha.m in Sources */,
 				A3F0C51C16634F5700CBFE54 /* UIImage+Resize.m in Sources */,
 				A3F0C51D16634F5700CBFE54 /* UIImage+RoundedCorner.m in Sources */,
+				A3E86525166467BE007AD827 /* NKNumberPad.m in Sources */,
+				A3E865351664B216007AD827 /* RegionAnnotation.m in Sources */,
+				A3E865361664B216007AD827 /* RegionAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
