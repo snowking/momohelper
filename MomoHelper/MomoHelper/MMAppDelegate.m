@@ -26,7 +26,7 @@
     // Override point for customization after application launch.
     // Config
     [[NKConfig sharedConfig] setNavigatorHeight:49];
-    [[NKConfig sharedConfig] setNavigatorChangeAnimate:YES];
+    [[NKConfig sharedConfig] setNavigatorChangeAnimate:NO];
     [[NKConfig sharedConfig] setNavigatorShowAnimate:YES];
     [[NKConfig sharedConfig] setDomainURL:@"http://lab.isou.hk/isou/api"];
     [[NKConfig sharedConfig] setParseDataKey:nil];
@@ -37,20 +37,13 @@
     ui.welcomeCalss = [MMFindViewController class];
     
     [ui addTabs:[NSArray arrayWithObjects:[NSArray arrayWithObjects:
-                                           [NKSegment segmentWithSize:CGSizeMake(240, 49) color:[UIColor lightGrayColor] andTitle:@"寻Ta"],
-                                           [NKSegment segmentWithSize:CGSizeMake(80, 49) color:[UIColor grayColor] andTitle:@"狼群"],
+                                           [NKSegment segmentWithSize:CGSizeMake(240, 49) normalColor:[UIColor grayColor] highlightColor:[UIColor lightGrayColor] andTitle:@"寻Ta"],
+                                           [NKSegment segmentWithSize:CGSizeMake(80, 49) normalColor:[UIColor grayColor] highlightColor:[UIColor lightGrayColor] andTitle:@"狼群"],
                                            nil],
                  [NSArray arrayWithObjects:[MMFindViewController class], [MMWolfViewController class], nil],
                  nil]];
     
-    UINavigationController *navi = [[[UINavigationController alloc] initWithRootViewController:ui] autorelease];
-    navi.view.backgroundColor = [UIColor clearColor];
-    //navi.supportedInterfaceOrientations =
-    UIImageView *back = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, NKMainHeight)];
-    back.image = [[UIImage imageNamed:@"appBackground.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(100, 50, 100, 50)];
-    [navi.view insertSubview:back atIndex:0];
-    [back release];
-    [navi setNavigationBarHidden:YES];
+    NKNavigationController *navi = [[[NKNavigationController alloc] initWithRootViewController:ui] autorelease];
     self.window.rootViewController = navi;
     
     self.window.backgroundColor = [UIColor whiteColor];

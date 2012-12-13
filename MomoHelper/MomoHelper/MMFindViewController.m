@@ -274,7 +274,7 @@
         
         
         
-        MKCoordinateRegion location = MKCoordinateRegionMakeWithDistance(newRegion.center, newRegion.radius+1500, newRegion.radius+1500);
+        MKCoordinateRegion location = MKCoordinateRegionMakeWithDistance(newRegion.center, newRegion.radius*1.5, newRegion.radius*1.5);
         [map setRegion:location animated:YES];
         regioned = NO;
         

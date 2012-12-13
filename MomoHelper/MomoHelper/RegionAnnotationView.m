@@ -64,7 +64,7 @@
 		self.map = nil;
 		theAnnotation = (RegionAnnotation *)annotation;
 		self.pinColor = MKPinAnnotationColorPurple;
-		self.radiusOverlay = [[MKCircle circleWithCenterCoordinate:theAnnotation.coordinate radius:theAnnotation.radius] autorelease];
+		self.radiusOverlay = [MKCircle circleWithCenterCoordinate:theAnnotation.coordinate radius:theAnnotation.radius];
 		
 		[map addOverlay:radiusOverlay];
 	}
