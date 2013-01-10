@@ -33,6 +33,7 @@
     
     NKUI *ui = [NKUI sharedNKUI];
     ui.needLogin = NO;
+    ui.needStoreViewControllers = YES;
     ui.homeClass = [MMFindViewController class];
     ui.welcomeCalss = [MMFindViewController class];
     
